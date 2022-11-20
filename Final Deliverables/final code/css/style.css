@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size:50px;
+    line-height:64px;
+    color:#222;
+}
+
+h2{
+    font-size:46px;
+    line-height:54px;
+    color:#222;
+}
+
+h4{
+    font-size:20px;
+    color:#222;
+}
+
+h6{
+    font-weight:700;
+    font-size:12px;
+}
+
+p{
+    font-size:16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+    padding:40px 80px;
+}
+
+.section-m1{
+    padding:40px 0;
+}
+
+button.normal{
+    font-size:14px;
+    font-weight:600;
+    padding:15px 30px;
+    color:#000;
+    background-color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition:0.2s;
+}
+
+button.white{
+    font-size:13px;
+    font-weight:600;
+    padding:11px 18px;
+    color:#fff;
+    background-color:transparent;
+    cursor:pointer;
+    border:1px solid #fff;
+    outline:none;
+    transition:0.2s;
+}
+
+body{
+    width:100%;    
+}
+
+/* Header start E3E6F3*/
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:6px 60px;
+    background:#ffffff;
+    box-shadow:5px 10px #64c2e7;
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+}
+
+#navbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    position:relative;
+}
+
+#navbar li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:#1a1a1a;
+    transition:0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:#64c2e7;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background:#64c2e7;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+
+/* Home page */
+
+#hero{
+    background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Girl-sunglasses-make-up-fashion-wallpaper-1920x1200.jpg");
+    height:90vh;
+    width:100%;
+    background-size:cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+#hero h4{
+    padding-bottom:15px;
+}
+
+#hero h1{
+    color:#2c18e4;
+}
+
+
+#feature{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#feature .fe-box{
+    width:180px;
+    text-align:center;
+    padding:25px 15px;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+    border:1px solid #cce7d0;
+    border-radius:4px;
+    margin:15px 0;  
+}
+
+#feature .fe-box:hover{
+    box-shadow:20px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .fe-box img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+#feature .fe-box h6{
+    display:inline-block;
+    padding:9px 8px 6px 8px;
+    line-height:1;
+    border-radius:4px;
+    color:#088178;
+    background-color:#fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc; 
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1edf2; 
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8; 
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6; 
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5; 
+}
+
+#product1{
+    text-align:center;
+}
+
+#product1 .pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap:wrap;
+}
+
+#product1 .pro{
+    width:23%;
+    min-width:250px;
+    padding:10px 12px;
+    border:1px solid #cce7d0;
+    border-radius:25px;
+    cursor:pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.02);
+    margin:15px 0;
+    transition: 0.2s ease;
+    position:relative;
+}
+
+#product1 .pro:hover{
+     box-shadow:20px 20px 30px rgba(0,0,0,0.06);   
+}
+
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+}
+
+#product1 .pro .des{
+    text-align:start;
+    padding:10px 0;
+}
+
+#product1 .pro .des span{
+    color:#606063;
+    font-size:14px;
+}
+
+#product1 .pro .des h5{
+    padding-top:7px;
+    color:#1a1a1a;
+    font-size:14px;
+}
+
+#product1 .pro .des i{
+    font-size:12px;
+    color:rgb(243,181,25);
+}
+
+#product1 .pro .des h4{
+    padding-top:7px;
+    color:#76d1f5;
+    font-size:15px;
+    font-weight:700;
+}
+
+#product1 .pro .bag{
+    width:40px;
+    height:40px
+    line-height:40px
+    border-radius:50px
+    background-color:#64c2e7;
+    font-weight:500;
+    color:#64c2e7;
+    
+    position:absolute;
+    bottom:20px;
+    right:10px;
+}
+
+#banner{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image:url("https://tse1.mm.bing.net/th?id=OIP.DN2oJqhcDlFTbUBG3iH9ZwHaE8&pid=Api&rs=1&c=1&qlt=95&w=151&h=100");
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    background-position:center;
+}
+
+#banner h4{
+    color:#fff;
+    font-size:16px;
+}
+
+#banner h2{
+    color:#fff;
+    font-size:30px;
+    padding:10px 0;
+}
+
+#banner h2 span{
+    color:#ef3636;
+}
+
+#banner button:hover,
+#hero button:hover{
+    background:#5dd9ff;
+    color:#fff;
+}
+
+#sm-banner{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap
+}
+
+#sm-banner .banner-box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    background-image:url("https://tse4.mm.bing.net/th?id=OIP.DJp-xFRiWqJwvh_AGp5_KwHaFF&pid=Api&P=0");
+    min-width:580px;
+    height:50vh;
+    background-size:cover;
+    background-position:center;
+    padding:30px;
+}
+
+#sm-banner .banner-box2{
+    background-image:url("https://thumbs.dreamstime.com/z/clothing-accessories-men-women-ready-travel-life-style-clothing-accessories-men-women-ready-travel-123474053.jpg");
+}
+
+
+#sm-banner h4{
+    color:#000;
+    font-size:20px;
+    font-weight:300
+}
+
+#sm-banner h2{
+    color:#000;
+    font-size:28px;
+    font-weight:800
+}
+
+#sm-banner span{
+    color:#000;
+    font-size:14px;
+    font-weight:500;
+    padding-bottom:15px;
+}
+
+#sm-banner button{
+    color:#000;
+}
+#sm-banner .banner-box:hover button{
+    background:#800080;
+    color:#000;
+}
+
+#banner3{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:0 80px;
+}
+
+#banner3 .banner-box{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+        background-image:url("https://wallpapercave.com/wp/wp5397095.jpg");
+        min-width:30%;
+        height:30vh;
+        background-size:cover;
+        background-position:center;
+        padding:8px;
+        margin-bottom:20px;
+}
+
+#banner3 .banner-box2{
+     background-image:url("https://tse1.mm.bing.net/th?id=OIP.LvVcLRZeVLVDHzqCEoBZ0AHaE7&pid=Api&P=0");
+}
+
+#banner3 .banner-box3{
+     background-image:url("https://s3.jp-tok.cloud-object-storage.appdomain.cloud/unik/banner33.jpg");
+}
+
+#banner3 h2{
+    color:#fff;
+    font-weight:000;
+    font-size:22px;
+}
+
+#banner3 h3{
+    color:#ec544e;
+    font-weight:800;
+    font-size:15px;
+}
+
+#banner3 .banner-box:hover{
+    box-shadow:20px 10px 54px rgba(70,62,221,0.1);
+}
+
+
+#newsletter{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+    background-image:url("img/purple.jpg");
+    background-repeat:no-repeat;
+    background-position:20% 30%;
+    background-color:#64c2e7;
+}
+
+#newsletter h4{
+    font-size:22px;
+    font-weight:700;
+    color:#000;
+}
+
+#newsletter p{
+    font-size:14px;
+    font-weight:600;
+    color:#000;
+}
+
+#newsletter p span{
+    color:#ffbd27;
+}
+
+#newsletter .form{
+    display:flex;
+    width:40%;
+}
+
+
+#newsletter input{
+    height:3.125rem;
+    padding: 0 1.25em;
+    font-size:14px;
+    width:100%;
+    border:1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+
+#newsletter button{
+    background-color:#64c2e7;
+    color:#fff;
+    white-space:nowrap;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+footer .col{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-bottom:20px;
+    padding-bottom:20px;
+}
+
+footer .logo{
+    margin-bottom:2px;
+}
+
+footer h4{
+    font-size:14px;
+    padding-bottom:20px;
+}
+
+footer p{
+    font-size:13px;
+    margin:0 0 8px 0;
+}
+
+footer a{
+    font-size:13px;
+    text-direction:none;
+    color:#222;
+    margin:0 0 8px 0;
+}
+
+footer a:hover{
+    width=100%;
+    text-align:center;
+    color:#53f5f5;
+}
+
+/* Products Page */
+
+#page-header{
+    background-image:url("https://thumbs.dreamstime.com/b/electronic-cigarettes-mens-accessories-wooden-background-dark-close-up-81716147.jpg");
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    padding:14px;
+}
+
+#page-header h2,
+#page-header p{
+    color:#000;
+}
+
+#pagination{
+    text-align:center;
+}
+
+#pagination a{
+    text-decoration:none;
+    background-color:#64c2e7;
+    padding:15px 20px;
+    border-radius:4px;
+    color:#000;
+    font-weight:600;
+}
+
+#pagination a i{
+    font-size:16px;
+    font-weight:600;
+}
+
+#pagination a:hover{
+    background-color:#800080;
+    color:#fff;
+}
+
+/* Single Product */
+
+#prodetails{
+    display:flex;
+    margin-top:20px;
+}
+
+#prodetails .single-pro-image{
+    width:40%;
+    margin-right:50px;
+}
+
+.small-img-group{
+    display:flex;
+    justify-content:space-between;
+}
+
+.small-img-col{
+    flex-basis:24%;
+    cursor:pointer;
+}
+
+#prodetails .single-pro-details{
+    width:50%;
+    padding-top:100px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size:26px;
+}
+
+#prodetails .single-pro-details select{
+    display:block;
+    padding:5px 10px;
+    margin-bottom:10px;
+}
+
+#prodetails .single-pro-details input{
+    width:50px;
+    height:47px;
+    padding-left:10px;
+    font-size:16px;
+    margin-right:10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline:none;
+}
+
+#prodetails .single-pro-details button{
+    background-color:#800080;
+    color:#fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height:25px;
+}
+
+
+/* Blog Page */
+
+#page-header.blog-header{
+    background-image:url("https://s3.jp-tok.cloud-object-storage.appdomain.cloud/unik/blog.jpeg");
+}
+
+#blog{
+    padding :150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display:flex;
+    align-items:center;
+    width:100%;
+    position:relative;
+    padding-bottom:90px;
+}
+
+#blog .blog-img{
+    width:50%;
+    margin-right:40px;
+}
+
+#blog img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+#blog .blog-details{
+    width:50%;
+}
+
+#blog .blog-details a{
+    text-decoration:none;
+    font-size:11px;
+    color:#000;
+    font-weight:700;
+    position:relative;
+    transition:0.3s;
+}
+
+#blog .blog-details a::after{
+    content:"";
+    width:50px;
+    height:1px;
+    background-color:#000;
+    position:absolute;
+    top:4px;
+    right:-60px;
+}
+
+#blog .blog-details a:hover{
+    color:#800080;
+}
+
+#blog .blog-details a:hover::after{
+     background-color:#800080;
+}
+
+#blog .blog-box h1{
+    position:absolute;
+    top:-40px;
+    left:0;
+    font-size:70px;
+    font-weight:700;
+    color:3c9cbce;
+    z-index:-9;
+}
+
+
+/* About Page */
+
+#page-header.about-header{
+    background-image:url(https://s3.jp-tok.cloud-object-storage.appdomain.cloud/unik/about.jpg);
+}
+
+#about-head{
+    display:flex;
+    align-items:center;
+}
+
+#about-head img{
+    width:50%;
+    height:auto;
+}
+
+#about-head div{
+    padding-left:40px;
+}
+
+#about-app{
+    text-align:center;
+}
+
+#about-app .video{
+    width:70%;
+    height:100%;
+    margin:30px auto 0 0;
+}
+
+#about-app .video video{
+    width:100%;
+    height:100%;
+    margin-top:20px;
+}
+
+#contact-details{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#contact-details .details{
+    width:40%;
+}
+
+#contact-details .details span,
+#form-details form span{
+    font-size:12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size:26px;
+    line-height:35px;
+    padding:20px 0;
+}
+
+#contact-details .details h3{
+    font-size:16px;
+    padding-bottom:15px;
+}
+
+#contact-details .details li{
+    list-style:none;
+    display:flex;
+    padding:10px;
+}
+
+#contact-details .details li i{
+    font-size:14px;
+    padding-right:22px;
+}
+
+#contact-details .details li p{
+    font-size:14px;
+    margin:0;
+}
+
+#contact-details .map{
+    width:55%;
+    height:400px;
+}
+
+#contact-details .map iframe{
+    width:100%;
+    height:100%;
+}
+
+#form-details{
+    display:flex;
+    justify-content:space-between;
+    margin:30px;
+    padding:80px;
+    border:1px solid #800080;
+}
+
+#form-details form{
+    width:65%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width:100%;
+    padding:12px 15px;
+    outline:none;
+    margin-bottom:20px;
+    border:1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color:#800080;
+    color:#fff;
+}
+
+#form-details .people div{
+    padding-bottom:25px;
+}
+
+#form-details .people div img{
+    width:65px;
+    height:65px;
+    object-fit:cover;
+    margin-right:15px;
+}
+
+#form-details .people div p{
+    margin:0;
+    font-size:13px;
+    line-height:25px;
+}
+
+#form-details .people div p span{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    color:#000;
+}
+
+
+/* Cart Page */
+
+#cart table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    white-space:nowrap;
+    
+}
+
+#cart table img{
+    width:70px;
+}
+
+#cart table td:nth-child(1){
+    width:100px;
+    text-align:40px 40px;
+}
+
+#cart table td:nth-child(2){
+    width:150px;
+    text-align:40px 40px;
+}
+
+#cart table td:nth-child(3){
+    width:250px;
+    text-align:40px 40px;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width:150px;
+    text-align:40px 40px;
+}
+
+#cart table td:nth-child(5) input{
+    width:70px;
+    padding:10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border:1px solid #e2e9e1;
+    border-left:none;
+    border-right:none;
+}
+
+#cart table thead td{
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:13px;
+    padding:18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top:15px;
+}
+
+#cart table tbody t{
+    font-size:13px;
+}
+
+#cart-add{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+#coupon{
+    width:50%;
+    margin-bottom:30px;    
+}
+
+#coupon h3,
+#subtotal h3{
+    padding-bottom:15px;
+}
+
+#coupon input{
+    padding:10px 20px;
+    outline:none;
+    width:60%;
+    margin-right:10px;
+    border:1px solid#64c2e7;
+}
+
+#coupon button,
+#subtotal button,
+#newsletter button{
+    background-color:#64c2e7;
+    color:#fff;
+    padding:12px 20px;
+}
+
+
+#subtotal{
+    width:50%;
+    margin-bottom:30px;
+    border:1px solid #e2e9e1;
+    padding:30px;
+}
+
+#subtotal table{
+    border-collapse:collapse;
+    width:100%
+    margin-bottom:20px;
+}
+
+#subtotal table td{
+    width:100%;
+    border:1px solid #64c2e7;
+    padding:10px;
+    font-size:13px;
+}
+
+
+
+/* Register */
+
+/* Add padding to containers */
+.container,
+.imgcontainer {
+  padding: 16px;
+  background-color: white;
+ 
+}
+
+#register,
+#login{
+  border: 60px solid ;
+  padding: 15px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #64c2e7;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #64c2e7;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+#register a {
+  color:#64c2e7;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Login Page */
+
+#login input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#login{
+  border: 60px solid ;
+  padding: 15px;
+  border-image: url(https://media.istockphoto.com/photos/men-stylish-casual-clothing-and-accessories-on-wooden-background-picture-id922727328) 30 stretch;
+}
+#login button {
+  background-color: #64c2e7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Blog 1 */
+
+#blog1{
+    text-align:center;
+}
+
+#blog1 .pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap:wrap;
+}
+
+#blog1 .pro{
+    width:23%;
+    min-width:250px;
+    padding:10px 12px;
+    border:1px solid #cce7d0;
+    border-radius:25px;
+    cursor:pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.02);
+    margin:15px 0;
+    transition: 0.2s ease;
+    position:relative;
+}
+
+#blog1 .pro:hover{
+     box-shadow:20px 20px 30px rgba(0,0,0,0.06);   
+}
+
+#blog1 .pro img{
+    width:100%;
+    border-radius:20px;
+}
+
+
+
+/* Media query*/
+
+
+
+
+
